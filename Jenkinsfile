@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Run Log Archive') {
             steps {
-                sh 'chmod +x log-archive.sh'
+                sh 'chmod +x log_archive.sh'
                 sh './log_archive.sh /var/log'
             }
         }
